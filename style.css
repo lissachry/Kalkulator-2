@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background: linear-gradient(135deg, #5b7cfa 0%, #9b5bfa 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 460px;
+}
+
+.judul {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.judul h1 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.judul p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.kartu {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.grup-input {
+  margin-bottom: 16px;
+}
+
+.grup-input label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.grup-input label:first-child {
+  margin-top: 0;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #222222;
+  background-color: #f5f6fa;
+  border: 2px solid #e0e3ec;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.input:focus {
+  border-color: #6a7dfa;
+  background-color: #ffffff;
+}
+
+.tombol {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: #ffffff;
+  background: linear-gradient(135deg, #5b7cfa, #9b5bfa);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+
+.tombol:hover {
+  box-shadow: 0 6px 16px rgba(91, 124, 250, 0.4);
+  transform: translateY(-2px);
+}
+
+.tombol:active {
+  transform: translateY(0);
+}
+
+.hasil {
+  margin-top: 20px;
+  padding: 18px;
+  background-color: #f0f4ff;
+  border-left: 5px solid #5b7cfa;
+  border-radius: 10px;
+}
+
+.hasil-kosong {
+  font-size: 0.9rem;
+  color: #666666;
+  text-align: center;
+}
+
+.hasil-judul {
+  font-size: 1rem;
+  color: #3b4cca;
+  margin-bottom: 10px;
+}
+
+.hasil-baris {
+  font-size: 0.95rem;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.hasil-baris strong {
+  color: #5b7cfa;
+}
+
+.pesan-error {
+  font-size: 0.9rem;
+  color: #c0392b;
+  text-align: center;
+}
+
+.sembunyi {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .kartu {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .judul h1 {
+    font-size: 1.35rem;
+  }
+  }
