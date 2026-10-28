@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Bangun Ruang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="judul">
+      <h1>📐 Kalkulator Bangun Ruang</h1>
+      <p>Pilih bangun ruang, masukkan ukurannya, lalu klik tombol Hitung.</p>
+    </header>
+
+    <section class="kartu">
+      <div class="grup-input">
+        <label for="pilih-bangun">Pilih Bangun Ruang</label>
+        <select id="pilih-bangun" class="input">
+          <option value="kubus">Kubus</option>
+          <option value="balok">Balok</option>
+          <option value="tabung">Tabung</option>
+          <option value="bola">Bola</option>
+          <option value="kerucut">Kerucut</option>
+        </select>
+      </div>
+
+      <div id="grup-kubus" class="grup-input">
+        <label for="kubus-sisi">Panjang Sisi (s)</label>
+        <input type="number" id="kubus-sisi" class="input" placeholder="Contoh: 5" step="any" />
+      </div>
+
+      <div id="grup-balok" class="grup-input sembunyi">
+        <label for="balok-panjang">Panjang (p)</label>
+        <input type="number" id="balok-panjang" class="input" placeholder="Contoh: 8" step="any" />
+        <label for="balok-lebar">Lebar (l)</label>
+        <input type="number" id="balok-lebar" class="input" placeholder="Contoh: 4" step="any" />
+        <label for="balok-tinggi">Tinggi (t)</label>
+        <input type="number" id="balok-tinggi" class="input" placeholder="Contoh: 5" step="any" />
+      </div>
+
+      <div id="grup-tabung" class="grup-input sembunyi">
+        <label for="tabung-jari">Jari-jari (r)</label>
+        <input type="number" id="tabung-jari" class="input" placeholder="Contoh: 7" step="any" />
+        <label for="tabung-tinggi">Tinggi (t)</label>
+        <input type="number" id="tabung-tinggi" class="input" placeholder="Contoh: 10" step="any" />
+      </div>
+
+      <div id="grup-bola" class="grup-input sembunyi">
+        <label for="bola-jari">Jari-jari (r)</label>
+        <input type="number" id="bola-jari" class="input" placeholder="Contoh: 7" step="any" />
+      </div>
+
+      <div id="grup-kerucut" class="grup-input sembunyi">
+        <label for="kerucut-jari">Jari-jari (r)</label>
+        <input type="number" id="kerucut-jari" class="input" placeholder="Contoh: 6" step="any" />
+        <label for="kerucut-tinggi">Tinggi (t)</label>
+        <input type="number" id="kerucut-tinggi" class="input" placeholder="Contoh: 8" step="any" />
+      </div>
+
+      <button id="tombol-hitung" class="tombol">Hitung</button>
+
+      <div id="hasil" class="hasil">
+        <p class="hasil-kosong">Hasil perhitungan akan muncul di sini.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+                                  </html>
